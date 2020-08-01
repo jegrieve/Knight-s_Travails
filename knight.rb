@@ -10,8 +10,8 @@ class Knight
         knight_placements = []
         x,y = position
 
-        knight_moves.each do |pos|
-            j, i = pos
+        knight_moves.each do |move|
+            j, i = move
             knight_placements << [j + x, i + y]
         end
         knight_placements
