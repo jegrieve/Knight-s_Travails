@@ -33,7 +33,7 @@ class Board
                 end
                 break
             end
-            positions = valid_pos?(parent_node.children)
+            positions = valid_pos(parent_node.children)
             positions.each do |pos|
                 child_node = Knight.new(pos, parent_node)
                 visited_node << child_node
@@ -43,7 +43,7 @@ class Board
         discovered_queue.reverse
     end
 
-    def valid_pos?(children)
+    def valid_pos(children)
         valid_positions = []
         children.each do |pos|
             if self.board.include?(pos)
@@ -53,7 +53,4 @@ class Board
         valid_positions
     end
 end
-
-a = Board.new
-p a.bfs([3,3], [3,7])
 

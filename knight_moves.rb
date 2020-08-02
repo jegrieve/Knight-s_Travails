@@ -10,4 +10,5 @@ require_relative "board.rb"
     end
 
 
-knight_moves([3,3], [0,0])
+
+ 
