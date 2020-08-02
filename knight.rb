@@ -1,5 +1,5 @@
 class Knight
-    attr_accessor :position, :children, :parent
+    attr_reader :position, :children, :parent
     def initialize(position, parent = nil)
         @position = position
         @parent = parent
@@ -18,6 +18,4 @@ class Knight
         knight_placements
     end
 end
-# a = Knight.new([3,3])
-# p a.possible_moves([3,3])
 
